@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resetCSS.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+    <script src="script.js" defer="defer"></script>
+    <title>Library</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="background-opacity">
+            <div class="nav">
+               <a href="index.html"><img class="logo" src="" alt="Logo"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                
+
+            </div>
+            <div class="header-content">
+                <h1>LIBRAIN</h1>
+                <p class="header-description">Keep All Of Your Books In One Place</p>
+            </div>
+        </div>   
+    </div>
+    <div class="form-container">
+        <h1 class="form-header">Add A New Book</h1>
+        <p class="warning"></p>
+        <form class="form" action="">
+                <div class="form-item title">
+                    <label for="title">Title</label>
+                    <input id="title" type="text" placeholder="Book Title">
+                </div>
+                <div class="form-item author">
+                    <label for="author">Author</label>
+                    <input id="author" type="text" placeholder="Author">
+                </div>
+                <div class="form-item pages">
+                    <label for="pages">Pages</label>
+                    <input id="pages" type="text">
+                </div>
+                <div class="form-item radio">
+                    <fieldset>
+                        <legend>Did you read it?</legend>
+                        <input id="yes" type="radio" name="read" value="read">
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="read" value="Not read">
+                        <label for="no">No</label>
+                    </fieldset>
+                </div>
+                <div class="form-item submit">
+                    <input id="submit-btn" type="submit"  class="btns" name="submit" value="Add">
+                </div>
+        </form>
+    </div>
+</body>
+</html>

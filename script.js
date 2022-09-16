@@ -16,13 +16,16 @@ let addForm         = document.querySelector(".form");
 let formExitBtn     = document.querySelector(".exit-btn");
 
 // ---------FUNCTIONS---------------------
-function Book(title,author,pages,isRead,coverUrl){
+class Book{
     //the constractor
-    this.title    = title;
-    this.author   = author;
-    this.pages    = pages;
-    this.isRead   = isRead;
-    this.coverUrl = coverUrl;
+    constructor(title,author,pages,isRead,coverUrl){
+        this.title    = title;
+        this.author   = author;
+        this.pages    = pages;
+        this.isRead   = isRead;
+        this.coverUrl = coverUrl;
+    }
+
 }
 
 function removeBook(e){
